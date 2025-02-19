@@ -18,7 +18,7 @@ Then run the application:
 npm start
 ```
 
-This will start both the client (front end) and server applications. Any changes will automatically reload your code.
+This will start both the client (front end) and server applications ath the same time on port 3000 (client) and port 3001 (server). Any changes will automatically reload your code.
 
 You can also run the client and server separately from each other:
 
