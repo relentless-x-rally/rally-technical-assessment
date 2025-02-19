@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(9 52 122);
+    min-height: 100vh;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    margin: 50px;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container label {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-container input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-container button {
+    align-self: end;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
