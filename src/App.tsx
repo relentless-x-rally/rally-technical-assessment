@@ -55,7 +55,7 @@ function App() {
                     </form>
                 </div>
                 <div>
-                    {/** Display search results here */}
+                    {/** Display search results here, can use components/SearchResult */}
                 </div>
             </div>
         </Container>
