@@ -1,12 +1,19 @@
 import {Container} from "@mui/material";
 import "./App.css";
-import {FormEvent, useState} from "react";
+import {FormEvent, useEffect, useState} from "react";
 import {User, Voter} from "./types";
 
 /**
  * Entry point component for the application.
  */
 function App() {
+
+    useEffect(() => {
+        fetch("http://localhost:3001/user/1")
+            .then(res => res.json())
+            .then((data: User) => setUser(data))
+            .catch(console.error);
+    }, []);
 
     /**
      * Will need to fetch the user from the server

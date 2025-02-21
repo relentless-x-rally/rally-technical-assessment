@@ -1,10 +1,12 @@
 import express, {NextFunction, Request, Response} from "express";
 import {dbClient} from "./dbClient";
+import cors from 'cors';
 
 const port = 3001
 
 const app = express()
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
